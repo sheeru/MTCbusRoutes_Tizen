@@ -1,13 +1,15 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<title>MTCBusRoutes</title>
 	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 	<script type="text/javascript">
-	$(document).ready(function(){
-		$("#test").html("Document Loaded");
-	});
+//	$(document).ready(function(){
+		$(document).load('chennai_bus_routes.txt', function(response){
+			alert(response.split('- ')[1]);
+		});
+//	});
 	</script>
+
 </head>
 <body>
 From:<input type="text"/></br>

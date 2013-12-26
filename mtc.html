@@ -1,12 +1,38 @@
 <html>
 <head>
-	<title>MTCBusRoutes</title>
-	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-	<script src="js/bussearch.js"></script>
+<title>MTCBusRoutes</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="js/jquery.autocomplete.min.js"></script>
+<script src="js/bussearch.js"></script>
+<script type="text/javascript">
+
+	
+</script>
 </head>
 <body>
-From:<input id="from" type="text"/><br/>
-To&nbsp&nbsp&nbsp&nbsp:<input id="to" type="text"/><br/>
-<button onclick="Search()">Search</button> 
+	<div id="content">
+		<div id="searchfield">
+			From:
+			<form>
+				<input id="from" class="biginput" type="text" onclick="FromPopulate()" /><br />
+			</form>
+		</div>
+
+		<div id="searchtofield">
+			To&nbsp&nbsp&nbsp&nbsp:
+			<form>
+				<input id="to" class="biginput" type="text" onclick="ToPopulate()" /><br />
+			</form>
+		</div>
+		<button onclick="Search()">Search</button>
+
+		<div id="RouteDisplay">
+			Filling the Direct and Indirect Routes...<br />
+		</div>
+
+		<div id="test"></div>
+	</div>
 </body>
 </html>

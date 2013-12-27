@@ -10,4 +10,6 @@ Just enter from where do you want to board and where do you want to get down!!!!
 
 The old search results will be hidden when new search is initiated unless cleared, thereby allowing you to check for multiple routes. You can expand the old search results.
 
-When from and to field are same, you get the buses which stop at that particular station
+When from and to field are same, you get the buses which stop at that particular station.
+
+This app can also be extened to other cities when chennai_bus_routes.txt is replaced properly for other cities.

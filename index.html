@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width">
 <link rel="shortcut icon" href="images/icon.png">
 <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+<script>
+	// since this is run locally in the .wgt file, it has access to window.tizen
+	window.addEventListener('tizenhwkey', function(e) {
+		if (e.keyName == "back") {
+			tizen.application.getCurrentApplication().exit();
+		}
+	});
+</script>
 <script src="js/jquery-1.10.2.js"></script>
 <script src="js/jquery.autocomplete.min.js"></script>
 <script src="js/bussearch.js"></script>
